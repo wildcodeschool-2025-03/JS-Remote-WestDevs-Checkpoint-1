@@ -14,8 +14,8 @@
     <nav>
       <img src="image/logo.svg" alt="logo-purple" />
       <ul class="menu">
-        <li><a href="home.html">Instructions</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a class="pink-text" href="home.html">Instructions</a></li>
+        <li><a class="pink-text" href="portfolio.html">Portfolio</a></li>
       </ul>
     </nav>
   </header>
@@ -40,7 +40,7 @@
           agencies, consulted for startups, and collaborated with talented people to create digital products for both
           business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my
           chops one problem at a time.</p>
-        <button>Modify text and color</button>
+        <button class="change-name-color-button pink-bg">Modify text and color</button>
       </section>
     </article>
 
@@ -56,9 +56,13 @@
           <h4 class="pink-text">Languages I speak:</h4>
           <p>MySql</p>
           <h4 class="pink-text">Dev Tools:</h4>
-          <ul>
+          <ul id="back-dev-tools">
             <li>VScode</li>
           </ul>
+          <form>
+            <input type="text" name="new-skill" id="new-skill" placeholder="Add your dev tools" required />
+            <button class="tools-button add-tools-button pink-bg" type="button">Add</button>
+          </form>
         </section>
         <section class="column">
           <img src="image/frontend.svg" alt="" />
@@ -72,6 +76,7 @@
             <li>You can modify</li>
             <li>You can modify</li>
           </ul>
+          <button class="tools-button change-tools-button pink-bg">Modify</button>
         </section>
       </div>
     </article>
