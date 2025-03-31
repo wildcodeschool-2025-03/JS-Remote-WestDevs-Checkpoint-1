@@ -16,9 +16,13 @@ exemple du résultat final :
   ["26-1", "26-2", "26-3", ..., "26-100"]
 ]
 */
+const i = 100;
 
 function theaterSieges() {
-  // Your code here !
+  for (let i = 0; i < 101; i++) {
+    console.log("1-" + i);
+  }
 }
 
+theaterSieges();
 module.exports = theaterSieges;
