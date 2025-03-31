@@ -19,18 +19,16 @@ exemple du résultat final :
 
 function theaterSieges() {
 	// Your code here !
-	const columnsNumber = [];
 	const numberSeats = [];
-	for (let i = 0; i <= 100; i++) {
-		numberSeats.push(i);
+
+	for (let i = 1; i <= 26; i++) {
+		const columnsNumber = [];
+
+		for (let j = 1; j <= 100; j++) {
+			columnsNumber.push(`${i} - ${j}`);
+		}
+		numberSeats.push(columnsNumber);
 	}
-	for (let i = 0; i <= 26; i++) {
-		columnsNumber.push(i);
-	}
-	let result = numberSeats.map((numberSeats) =>
-		columnsNumber.map((columnsNumber) => columnsNumber + "-" + numberSeats),
-	);
-	return [result];
+	return numberSeats;
 }
-// Renvoie bcp trop de tableau, à revoir, pb rencontré : comment créer des sous tableaux comme l'ex final.
 module.exports = theaterSieges;
