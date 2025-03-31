@@ -34,9 +34,9 @@ p {
 
 .menu {
   border: 2px, solid red;
+  margin-bottom: var(--gutter);
   display: flex;
   justify-content: flex-end;
-  margin-bottom: var(--gutter);
 }
 
 header h3 {
@@ -125,6 +125,7 @@ header p {
   color: var(--lightWildColor);
 }
 
+
 .projects a {
   color: var(--purple);
 }
@@ -136,6 +137,15 @@ header p {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+}
+
+#Bigbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
 }
 
 .purple-text {
