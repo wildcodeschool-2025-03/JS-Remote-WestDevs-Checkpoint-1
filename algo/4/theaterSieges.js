@@ -18,7 +18,19 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
-  // Your code here !
+	// Your code here !
+	const columnsNumber = [];
+	const numberSeats = [];
+	for (let i = 0; i <= 100; i++) {
+		numberSeats.push(i);
+	}
+	for (let i = 0; i <= 26; i++) {
+		columnsNumber.push(i);
+	}
+	let result = numberSeats.map((numberSeats) =>
+		columnsNumber.map((columnsNumber) => columnsNumber + "-" + numberSeats),
+	);
+	return [result];
 }
-
+// Renvoie bcp trop de tableau, à revoir, pb rencontré : comment créer des sous tableaux comme l'ex final.
 module.exports = theaterSieges;
