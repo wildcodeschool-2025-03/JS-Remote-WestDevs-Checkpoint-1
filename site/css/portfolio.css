@@ -11,6 +11,13 @@
   --textAlign: center;
 }
 
+@media screen and (min-width: 700px) {
+
+  header nav {
+    justify-content: space-between;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -28,10 +35,32 @@ p {
   margin-bottom: var(--gutter);
 }
 
+@media screen and (min-width: 700px) {
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .presentation img {
+    width: 225px;
+  }
+
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+@media screen and (max-width: 700px) {
+
+  .desktop img {
+    display: none;
+  }
+
 }
 
 .description {
@@ -49,6 +78,25 @@ p {
 
 .pink-bg {
   background-color: var(--lightWildColor);
+}
+
+@media screen and (min-width: 700px) {
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }
 
 .skills {
@@ -95,6 +143,15 @@ p {
 .projects a {
   color: var(--purple);
 }
+
+@media screen and (min-width: 700px) {
+
+  .projects {
+    display: flex;
+  }
+
+}
+
 
 .box {
   width: 25%;
