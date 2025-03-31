@@ -11,8 +11,17 @@
   --textAlign: center;
 }
 
+
 img {
   max-width: 100%;
+
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -24,14 +33,28 @@ p {
 }
 
 .menu {
+  border: 2px, solid red;
   display: flex;
+  justify-content: flex-end;
   margin-bottom: var(--gutter);
+}
+
+header h3 {
+  font-size: 25px;
+}
+
+header p {
+  font-size: 20px;
+
 }
 
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
+
 }
 
 .description {
@@ -52,15 +75,23 @@ p {
 }
 
 .skills {
-  margin-top: calc(var(--gutter) * -2);
+  /*margin-top: calc(var(--gutter) * -2);*/
   border-radius: var(--radius);
   padding: 0 10%;
+  border: 2px, solid orange;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+
+
 }
 
-.skills--title {
+/*.skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
-}
+
+}*/
 
 .column {
   border-left: var(--styledBorder);
@@ -71,7 +102,9 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+
 }
+
 
 .column:first-of-type {
   border-bottom-left-radius: 0;
@@ -107,4 +140,23 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: wrap;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .desktop img {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
 }

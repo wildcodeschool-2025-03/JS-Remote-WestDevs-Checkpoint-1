@@ -26,7 +26,7 @@ const persons = [
 */
 
 function findSeniors(persons) {
-  // Your code here !
+  if (persons === experience: 5)
 }
 
 module.exports = findSeniors;
