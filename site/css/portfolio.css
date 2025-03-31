@@ -108,3 +108,26 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media (min-width: 701px) {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .step2 {
+    text-align: center;
+  }
+
+  .desktop {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .desktop img {
+    display: none;
+  }
+}

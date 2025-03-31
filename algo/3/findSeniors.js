@@ -1,9 +1,9 @@
-/*
-Voici un exemple de tableau de personnes. Écris une fonction qui à partir d'un tableau similaire reçu en paramètre renverra un nouveau tableau,
-lui-même contenant deux sous-tableaux :
-- Le premier contient uniquement des devs web seniors
-- Le second ne contient que des data analysts seniors
-(Étant donné qu'une personne est senior si elle a 5 ans d'expérience ou plus)
+
+// Voici un exemple de tableau de personnes. Écris une fonction qui à partir d'un tableau similaire reçu en paramètre renverra un nouveau tableau,
+// lui-même contenant deux sous-tableaux :
+// - Le premier contient uniquement des devs web seniors
+// - Le second ne contient que des data analysts seniors
+// (Étant donné qu'une personne est senior si elle a 5 ans d'expérience ou plus)
 
 const persons = [
   { name: 'Mary', experience: 2, job: 'web dev' },
@@ -23,10 +23,10 @@ const persons = [
   { name: 'Penelope', experience: 7, job: 'web dev' },
 ];
 
-*/
+
 
 function findSeniors(persons) {
-  // Your code here !
+  const devWebSenior = 
 }
 
 module.exports = findSeniors;
