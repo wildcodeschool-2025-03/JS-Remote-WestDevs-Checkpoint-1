@@ -23,9 +23,21 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav{
+  display: flex;
+  justify-content: center;
+  gap: 800px;
+}
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
 }
 
 .desktop {
@@ -55,7 +67,13 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
-}
+  display: flex;
+  flex-direction: row    
+  }
+
+
+ 
+
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
@@ -96,6 +114,12 @@ p {
   color: var(--purple);
 }
 
+
+.projects{
+  
+  opacity: 1;
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -108,3 +132,19 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (max-width = 700px) {
+  .desktop {display: none;
+     }
+}
+
+.skills--title {flex-direction: column-reverse;
+ 
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+

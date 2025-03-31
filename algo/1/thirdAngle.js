@@ -7,6 +7,17 @@ thirdAngle(20, 80) doit retourner 80
 */
 
 function thirdAngle(a, b) {
+  a = 90; 
+  b = 30;
+  c = ''
+  const thirdAngle = a + b + c;
+
+  if ('thirdAngle === 180'  => {
+     c = 180 - a - b;
+  })
+
+    console.log(c);
+  
   // Your code here !
 }
 
