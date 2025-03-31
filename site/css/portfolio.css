@@ -69,6 +69,20 @@ p {
   text-align: var(--textAlign);
 }
 
+.description button {
+  padding: 8px;
+  color: var(--light);
+  border: 1px solid var(--borderColor);
+  background-color: transparent;
+  border-radius: 4px;
+  transition: 0.3s;
+
+  &:hover {
+    /* font-weight: 600; */
+    transform: scale(1.02);
+  }
+}
+
 .pink-bg {
   background-color: var(--lightWildColor);
 }
