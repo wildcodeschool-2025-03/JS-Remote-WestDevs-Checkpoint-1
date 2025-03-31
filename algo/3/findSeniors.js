@@ -26,6 +26,18 @@ const persons = [
 */
 
 function findSeniors(persons) {
+  const devsWebSeniors = [];
+  const dataAnalystSeniors = [];
+  for (let i = 0; i < persons.length; i++) {
+    const persons = persons.slice(i, i + 1)[0];
+    if (
+      person.experience >= 5 && persone.job === "web dev"
+    ) { devsWebSeniors.push(persons) }
+    else if {
+
+    }
+  }
+
   // Your code here !
 }
 

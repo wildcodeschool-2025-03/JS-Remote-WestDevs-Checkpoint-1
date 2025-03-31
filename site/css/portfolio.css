@@ -12,7 +12,7 @@
 }
 
 img {
-  max-width: 100%;
+  max-width: 150px;
 }
 
 h1 {
@@ -107,4 +107,62 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width: 700px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center
+  }
+
+  div img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}
+
+
+
+.skills {
+  display: flex;
+  flex-direction: row-reverse;
+  /* Place les colonnes côte à côte */
+  justify-content: space-around;
+  /* Espacement uniforme entre les colonnes */
+  align-items: stretch;
+  /* Aligne les colonnes en haut */
+}
+
+.skills .column {
+  flex: 1;
+  /* Permet aux colonnes d'occuper des parts égales d'espace */
+
+  /* Ajoute un petit espacement entre les colonnes */
+}
+
+
+@media screen and (max-width:700px) {
+  section figure {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    /* Place les colonnes côte à côte */
+    justify-content: space-around;
+    /* Espacement uniforme entre les colonnes */
+    align-items: stretch;
+    /* Aligne les colonnes en haut */
+  }
 }
