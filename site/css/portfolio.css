@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --radius: 12px;
 
@@ -9,6 +13,10 @@
   --styledShadow: 0 5px 5px 0 var(var(--shadowColor));
 
   --textAlign: center;
+}
+
+body {
+  margin: 0;
 }
 
 img {
@@ -23,12 +31,32 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
+  align-items: flex-end;
   margin-bottom: var(--gutter);
 }
 
+.dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
 .desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
@@ -52,6 +80,9 @@ p {
 }
 
 .skills {
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
@@ -62,7 +93,15 @@ p {
   text-align: var(--textAlign);
 }
 
+.code {
+  display: block;
+  height: 80px;
+}
+
 .column {
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
   border-left: var(--styledBorder);
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
@@ -107,4 +146,16 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media (min-width: 280px) and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media screen (min-width: 700px) {
+  .skills {
+    display: flex;
+  }
 }
