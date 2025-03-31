@@ -38,7 +38,9 @@ const addToolsButton = document.querySelector(".add-tools-button");
 const newSkill = document.querySelector("#new-skill");
 
 addToolsButton.addEventListener("click", () => {
-    backDevToolsList.innerHTML += `<li>${newSkill.value}</li>`;
-})
+    const newLi = document.createElement("li");
+    newLi.innerHTML = newSkill.value;
+    backDevToolsList.appendChild(newLi);
+});
 
 
